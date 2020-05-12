@@ -9,7 +9,12 @@ class Sql extends PDO {
 
 		$this->conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESSPHP;ConnectionPooling=0", "", "423027@@@Jco");
 
+
 		//$this->$conn = new PDO('mysql:dbname=dbphp7;host=localhost', 'root', '');
+
+		//$this->$conn = new PDO('mysql:dbname=dbphp7;host=localhost', 'root', '');
+
+		//$this->conn = new PDO("mysql:host=localhost;dbname=dbphp7","root","");
 
 	}
 
@@ -45,6 +50,9 @@ class Sql extends PDO {
 
 
 	}
+
+
+
 
 	public function select($rawQuery, $params=array()):array
 	{
