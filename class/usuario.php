@@ -142,7 +142,7 @@ class Usuario{
 		public function update($login, $password){
 
 			$this->setDeslogin($login);
-			$this->setDessenha($password);
+			$this->setDesenha($password);
 
 			$sql = new Sql();
 

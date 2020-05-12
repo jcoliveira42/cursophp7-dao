@@ -27,20 +27,20 @@ require_once("config.php");
 	//echo $usuario;
 
 	//Insert de novo usuario usando stored procedure
-	$aluno = new Usuario("jenilson","4242");
-	$aluno->insert();
-	echo $aluno;
+	//$aluno = new Usuario("jenilson","4242");
+	//$aluno->insert();
+	//echo $aluno;
 
 	//Alterar um usuario pelo ID
-	/*$usuario = new Usuario();
-	$usuario->loadById(1029);
-	$usuario->update("jesusalterado","12345678");
-	echo $usuario;*/
+	//$usuario = new Usuario();
+	//$usuario->loadById(8);
+	//$usuario->update("JCOOO","996655");
+	//echo $usuario;
 
 	//Elimina um usuario pelo ID
-	//$usuario = new Usuario();
-	//$usuario->loadById(1029);
-	//$usuario->delete();
-	//echo $usuario;
+	$usuario = new Usuario();
+	$usuario->loadById(11);
+	$usuario->delete();
+	echo $usuario;
 
  ?>
